@@ -7,7 +7,7 @@ def index(request):
     context = {'members': members}
     return render(request, 'crud/index.html', context)
 
-def tambah(request):
+def create(request):
     member = Member(
     firstname = request.POST['firstname'],
     lastname  = request.POST['lastname'],
